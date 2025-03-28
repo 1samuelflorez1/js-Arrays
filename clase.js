@@ -1,4 +1,4 @@
-    
+    /*
     //esto es para colocar digamos distintos elementos
     
     let animales = ["perro", "gato", "conejo", "pez", "aguila"]
@@ -34,7 +34,7 @@
 
     //agregar al inicio del array 
 
-    animales.unshift("Leon")
+    animales.unshift("leon")
     console.log(animales)
 
     //buscar el indice de un elemento (esto nos sirve cuando no sabemos en que lugar esta un elemento)
@@ -51,3 +51,41 @@
 
     console.log(animales.includes("tortuga"))
     console.log(animales)
+
+    //invertir  la lista 
+
+    let animalesAlcontrario = animales.reverse()
+    console.log(animalesAlcontrario)
+
+    //ordenar la lista 
+
+    console.log(animales.sort())
+    
+    //eliminar en un indice especifico
+
+    animales.splice(0, 1)
+    console.log(animales)
+
+    */
+
+
+    //let animales = ["perro", "gato", "conejo", "pez", "aguila"]
+    //lista resultante que tenga los elementos = ["aguila", "conejo", "pez", "leon"]
+
+    let animales = ["perro", "gato", "conejo", "pez", "aguila"]
+
+    animales.splice(0, 1)
+    console.log(encontrarGato(animales))
+    animales[0] = animales[3]
+    console.log(encontrarGato(animales))
+    animales.pop()
+    animales.push("leon")
+
+    console.log(animales)
+
+    function encontrarGato(lista ) {
+
+        let result = lista.includes("gato")
+        return result
+
+    }
