@@ -41,6 +41,8 @@
 
     let indiceDelGato = animales.indexOf("gato")
     console.log(animales[indiceDelGato])
+
+    
     console.log(animales[animales.indexOf("gato")])
 
     //determinar si un elemento esta en el arreglo (nos sirve para determinar si un elemento existe o no en el array)
